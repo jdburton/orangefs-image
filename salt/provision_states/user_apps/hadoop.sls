@@ -1,10 +1,10 @@
 hadoop_de:
   cmd.script:
     - source: salt://utils/de.sh
-    - args: "http://www.us.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz /opt/"
-    - creates: /opt/hadoop-2.9.0/
+    - args: "http://www.us.apache.org/dist/hadoop/common/hadoop-2.9.1/hadoop-2.9.1.tar.gz /opt/"
+    - creates: /opt/hadoop-2.9.1/
   file.directory:
-    - name: /opt/hadoop-2.9.0/
+    - name: /opt/hadoop-2.9.1/
     - user: root
     - group: root
     - recurse:
@@ -15,10 +15,10 @@ hadoop_de:
 hadoop28_de:
   cmd.script:
     - source: salt://utils/de.sh
-    - args: "http://www.us.apache.org/dist/hadoop/common/hadoop-2.8.3/hadoop-2.8.3.tar.gz /opt/"
-    - creates: /opt/hadoop-2.8.3/
+    - args: "http://www.us.apache.org/dist/hadoop/common/hadoop-2.8.4/hadoop-2.8.4.tar.gz /opt/"
+    - creates: /opt/hadoop-2.8.4/
   file.directory:
-    - name: /opt/hadoop-2.8.3/
+    - name: /opt/hadoop-2.8.4/
     - user: root
     - group: root
     - recurse:
@@ -28,10 +28,10 @@ hadoop28_de:
 hadoop27_de:
   cmd.script:
     - source: salt://utils/de.sh
-    - args: "http://www.us.apache.org/dist/hadoop/common/hadoop-2.7.5/hadoop-2.7.5.tar.gz /opt/"
-    - creates: /opt/hadoop-2.7.5/
+    - args: "http://www.us.apache.org/dist/hadoop/common/hadoop-2.7.6/hadoop-2.7.6.tar.gz /opt/"
+    - creates: /opt/hadoop-2.7.6/
   file.directory:
-    - name: /opt/hadoop-2.7.5/
+    - name: /opt/hadoop-2.7.6/
     - user: root
     - group: root
     - recurse:

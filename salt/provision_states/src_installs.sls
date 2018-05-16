@@ -16,12 +16,12 @@ orangefs_install:
 openmpi_install:
   cmd.script:
     - source: salt://src_installs/openmpi.sh
-    - creates: /opt/mpi/openmpi-1.8.8
+    - creates: /opt/mpi/openmpi-3.1.0
 
 hdf5_install:
   cmd.script:
     - source: salt://src_installs/hdf5.sh
-    - creates: /opt/hdf5-1.8.17
+    - creates: /opt/hdf5-1.10.2
 
 orangefs_test_install:
   cmd.script:
